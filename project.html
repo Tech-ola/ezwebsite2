@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>EZ37 Solutions Limited</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Infinitude Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <style>
+        .sponsors-section {
+            text-align: center;
+            padding: 50px 0;
+            background-color: white;
+        }
+    
+        .sponsors-section h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    
+        .sponsors-section p {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #6c757d;
+        }
+    
+        .sponsor-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+    
+        .sponsor-logos img {
+            max-height: 60px;
+            display: inline-block;
+        }
+    
+        .case-studies-section {
+            padding: 50px 0;
+            background-color: #ffffff;
+        }
+    
+        .case-studies {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    
+        .case-study-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+    
+        .case-study-card:hover {
+            transform: translateY(-5px);
+        }
+    
+        .case-study-card img {
+            width: 100%;
+            height: auto;
+        }
+    
+        .case-study-content {
+            padding: 20px;
+        }
+    
+        .case-study-content h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+    
+        .case-study-content p {
+            font-size: 14px;
+            color: #6c757d;
+        }
+    
+        .case-study-tags {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+    
+        .tag {
+            background-color: #007bff;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+    
+        .case-study-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+    
+        .case-study-button:hover {
+            background-color: #0056b3;
+        }
+    
+        .case-studies-navigation {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+    
+        .nav-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+    
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+    
+        .case-studies-section {
+            position: relative;
+            padding-bottom: 50px;
+            /* To ensure there's space for the buttons */
+        }
+    
+        .navigation-buttons {
+            position: absolute;
+            bottom: 10px;
+            right: 70px;
+            display: flex;
+            gap: 10px;
+        }
+    
+        .navigation-buttons .btn {
+            padding: 10px 30px;
+            font-size: 12px;
+            top: 70px;
+        }
+    
+        /* Media Queries */
+        @media (max-width: 992px) {
+            .case-studies {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+    
+            .case-study-card {
+                margin: 10px 0;
+            }
+    
+            .case-study-content h3 {
+                font-size: 16px;
+            }
+    
+            .case-study-content p {
+                font-size: 12px;
+            }
+    
+            .sponsors-section h2 {
+                font-size: 24px;
+            }
+    
+            .sponsors-section p {
+                font-size: 16px;
+            }
+        }
+    
+        @media (max-width: 768px) {
+            .case-studies {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+    
+            .case-study-card {
+                margin: 10px 0;
+            }
+    
+            .navigation-buttons {
+                right: 10px;
+            }
+    
+            .case-studies-section {
+                padding: 20px 0;
+            }
+    
+            .sponsors-section h2 {
+                font-size: 24px;
+            }
+    
+            .sponsors-section p {
+                font-size: 16px;
+            }
+    
+            .case-study-content h3 {
+                font-size: 16px;
+            }
+    
+            .case-study-content p {
+                font-size: 12px;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            .case-studies {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+    
+            .case-study-card {
+                margin: 10px 0;
+            }
+    
+            .case-studies-section {
+                padding: 10px 0;
+            }
+    
+            .sponsors-section h2 {
+                font-size: 20px;
+            }
+    
+            .sponsors-section p {
+                font-size: 14px;
+            }
+    
+            .case-study-content h3 {
+                font-size: 14px;
+            }
+    
+            .case-study-content p {
+                font-size: 10px;
+            }
+        }
+    </style>
+    
+
+</head>
+
+<body>
+    <div id="home" class="inner-w3pvt-page">
+        <div class="overlay-innerpage">
+            <div class="top_w3pvt_main container">
+                <header class="nav_w3pvt text-center ">
+                    <nav class="wthree-w3ls">
+                        <div id="logo">
+                            <a class="navbar-brand px-0 mx-0" href="index.html"><img src="./images/ez37logo.png" alt="EZ Logo" title="EZ Logo" /></a>
+                        </div>
+                        <label for="drop" class="toggle">Menu</label>
+                        <input type="checkbox" id="drop" />
+                        <ul class="menu mr-auto">
+                            <li class="active"><a href="index.html" style="font-size: 17px; font-weight: bolder;">Home</a></li>
+                            <li><a href="about.html" style="font-size: 17px; font-weight: bolder;">About</a></li>
+                            <li>
+                                <label for="drop-2" class="toggle toggle-2" style="font-size: 17px; font-weight: bolder;">Solutions <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
+                                <a href="#" style="font-size: 17px; font-weight: bolder;">Solutions <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                                <input type="checkbox" id="drop-2" />
+                                <ul>
+                                    <li><a href="coaching.html" class="drop-text" style="font-size: 15px;">Coaching</a></li>
+                                    <li><a href="assessment.html" class="drop-text" style="font-size: 15px;">Assessments</a></li>
+                                    <li><a href="hradvisory.html" class="drop-text" style="font-size: 15px;">HR Advisory Service</a></li>
+                                    <li><a href="publicsector.html" class="drop-text" style="font-size: 15px;">Public Sector Solutions</a></li>
+                                    <li><a href="learningdev.html" class="drop-text" style="font-size: 15px;">Learning & Development</a></li>
+                                    <li><a href="facilitatinglearning.html" class="drop-text" style="font-size: 15px;">Facilitating Learning</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="project.html" style="font-size: 17px; font-weight: bolder;">Projects</a></li>
+                            <li><a href="contact.html" style="font-size: 17px; font-weight: bolder;">Contact</a></li>
+                            <li class="social-icons ml-lg-3"><a href="#" class="p-0 social-icon"><span class="fa fa-facebook-official" aria-hidden="true"></span>
+                                    <div class="tooltip">Facebook</div>
+                                </a> </li>
+                            <li class="social-icons"><a href="#" class="p-0 social-icon"><span class="fa fa-twitter" aria-hidden="true"></span>
+                                    <div class="tooltip">Twitter</div>
+                                </a> </li>
+                            <li class="social-icons"><a href="#" class="p-0 social-icon"><span class="fa fa-instagram" aria-hidden="true"></span>
+                                    <div class="tooltip">Instagram</div>
+                                </a> </li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="inner-w3pvt-page-info">
+                    <ol class="breadcrumb d-flex">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active">Projects</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="sponsors-section" style="background-color: white !important; padding: 20px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 d-flex align-items-center">
+                    <b>Trusted by many</b>
+                </div>
+                <div class="col-md-8 d-flex justify-content-between align-items-center">
+                    <img src="./images/gtbanklogo.png" alt="US Bank" style="max-height: 50px;">
+                    <img src="./images/logo2.png" alt="L'Oréal" style="max-height: 50px;">
+                    <img src="./images/logo3.png" alt="Stanford University" style="max-height: 50px;">
+                    <img src="./images/logo4.png" alt="Harvard University" style="max-height: 50px;">
+                    <img src="./images/totalenergies.jpg" alt="TEDx" style="max-height: 50px;">
+                    <img src="./images/logo6.png" alt="NASA" style="max-height: 50px;">
+                </div>
+            </div>
+        </div>
+    </div></div>
+    
+    <div class="case-studies-section" style="background-color: #e3e5e6;">
+        <div class="case-studies" style="margin-bottom: 3%;">
+            <div class="case-study-card">
+                <img src="./images/gtbanklogo.png" alt="L'Oreal Case Study">
+                <div class="case-study-content">
+                    <h3>This is where the name of the project would be</h3>
+                    <p>The description of the project would appear here</p>
+                    <div class="case-study-tags">
+                        <span class="tag">In-person</span>
+                        <span class="tag">Corporate</span>
+                    </div>
+                    <!-- <a href="#" class="case-study-button">View Case Study</a> -->
+                </div>
+            </div>
+            <div class="case-study-card">
+                <img src="./images/cocacola.png" alt="Harvard Kennedy School Reunion">
+                <div class="case-study-content">
+                    <h3>This is where the name of the project would be</h3>
+                    <p>The description of the project would appear here</p>
+                    <div class="case-study-tags">
+                        <span class="tag">Virtual</span>
+                        <span class="tag">Education</span>
+                    </div>
+                    <!-- <a href="#" class="case-study-button">View Case Study</a> -->
+                </div>
+            </div>
+            <div class="case-study-card">
+                <img src="./images/lafarge.png" alt="Air Force Eastern Regional Environmental Restoration Summit" style="height: 50%;">
+                <div class="case-study-content">
+                    <h3>This is where the name of the project would be</h3>
+                    <p>The description of the project would appear here</p>
+                    <div class="case-study-tags">
+                        <span class="tag">Virtual</span>
+                        <span class="tag">Government</span>
+                    </div>
+                    <!-- <a href="#" class="case-study-button">View Case Study</a> -->
+                </div>
+            </div>
+            <div class="case-study-card">
+                <img src="./images/IHS.png" alt="Air Force Eastern Regional Environmental Restoration Summit" style="height: 50%;">
+                <div class="case-study-content">
+                    <h3>This is where the name of the project would be</h3>
+                    <p>The description of the project would appear here</p>
+                    <div class="case-study-tags">
+                        <span class="tag">Virtual</span>
+                        <span class="tag">Government</span>
+                    </div>
+                    <!-- <a href="#" class="case-study-button">View Case Study</a> -->
+                </div>
+            </div>
+
+            <div class="case-study-card" style="height: 100%;">
+                <img src="./images/totalenergies.jpg" alt="Air Force Eastern Regional Environmental Restoration Summit" style="height: 50%;">
+                <div class="case-study-content">
+                    <h3>This is where the name of the project would be</h3>
+                    <p>The description of the project would appear here.</p>
+                    <div class="case-study-tags">
+                        <span class="tag">Virtual</span>
+                        <span class="tag">Government</span>
+                    </div>
+                    <!-- <a href="#" class="case-study-button">View Case Study</a> -->
+                </div>
+            </div>
+            <div class="case-study-card" style="height: 100%;">
+                <img src="./images/boi.jpg" alt="United Nations Data Forum" style="height: 50%;">
+                <div class="case-study-content">
+                    <h3>This is where the name of the project would be</h3>
+                    <p>The description of the project would appear here.</p>
+                    <div class="case-study-tags">
+                        <span class="tag">Hybrid</span>
+                        <span class="tag">International</span>
+                        <span class="tag">Science</span>
+                    </div>
+                    <!-- <a href="#" class="case-study-button">View Case Study</a> -->
+                </div>
+            </div>
+            <!-- Add more case-study-card divs as needed -->
+        </div>
+        <div class="navigation-buttons">
+            <button class="btn btn-primary" id="prevBtn"> <i class="fa fa-arrow-circle-o-left" style="font-size: 24px;" aria-hidden="true"></i></button>
+            <button class="btn btn-success" id="nextBtn"><i class="fa fa-arrow-circle-o-right" style="font-size: 24px;" aria-hidden="true"></i></button>
+        </div>
+    </div>
+    
+    <!-- footer -->
+    <footer class="py-lg-5 py-4">
+        <div class="container py-sm-3">
+            <div class="row footer-grids">
+                <div class="col-lg-4 mt-4">
+
+                    <h2> <a class="navbar-brand px-0 mx-0 mb-4" href="index.html"><img src="./images/ez37logo.png" alt="" srcset="" style="width: 50%">
+                        </a>
+                    </h2>
+                    <p class="mb-3">EZ37 Solutions, with RC Number 833803 established in 2009, specialises in delivering diverse Coaching and Learning and Development programs that inspire employees to be more engaged and motivated.</p>
+                    <h5>Trusted by <span>1000+ People</span> </h5>
+                    <div class="icon-social mt-4">
+                        <a href="#" class="button-footr">
+                            <span class="fa mx-2 fa-facebook"></span>
+                        </a>
+                        <a href="#" class="button-footr">
+                            <span class="fa mx-2 fa-twitter"></span>
+                        </a>
+                        <a href="#" class="button-footr">
+                            <span class="fa mx-2 fa-dribbble"></span>
+                        </a>
+                        <a href="#" class="button-footr">
+                            <span class="fa mx-2 fa-pinterest"></span>
+                        </a>
+                        <a href="#" class="button-footr">
+                            <span class="fa mx-2 fa-google-plus"></span>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <h4 class="mb-4">Quick Links</h4>
+                    <div class="links-wthree d-flex">
+                        <ul class="list-info-wthree">
+                            <li><a href="/"><span class="fa fa-angle-double-right" aria-hidden="true"></span> Home</a></li>
+                            <li><a href="./about.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span> About Us</a></li>
+                            <li><a href="./coaching.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span> Coaching</a></li>
+                            <li><a href="hradvisory.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span> HR Advisory</a></li>
+                            <li><a href="assessment.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span> Assessments</a></li>
+                            <li><a href="publicsector.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span> Public Sector Solutions</a></li>
+                        </ul>
+                        <ul class="list-info-wthree ml-5">
+                            <li>
+                                <a href="learningdev.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Learning & Development
+                                </a>
+                            </li>
+                            <li>
+                                <a href="facilitatinglearning.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Facilitating Learning
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4 ad-info">
+                    <h4 class="mb-4">Contact Info</h4>
+                    <p><span class="fa fa-map-marker"></span>Block 3. Plot 2, Road B, Off Oba
+                        Abimbola way, Agodi GRA, <span>Ibadan, Nigeria.</span></p>
+                    <p class="phone"><span class="fa fa-phone"></span> +234-813-089-8773 </p>
+                    <p class="phone"><span class="fa fa-fax"></span> +234-809-788-1001</p>
+                    <p><span class="fa fa-envelope"></span><a href="mailto:info@ez37solutions.org">info@ez37solutions.org</a></p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+    <!-- copyright -->
+    <div class="copy_right p-3 d-flex">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-lg-9 copy_w3pvt">
+                    <p class="text-lg-left text-center">© 2024 EZ37 Solutions Limited.</p>
+
+                </div>
+                <!-- move top -->
+                <div class="col-lg-3 move-top text-lg-right text-center">
+                    <a href="#home" class="move-top">
+                        <span class="fa fa-angle-double-up mt-3" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <!-- move top -->
+            </div>
+        </div>
+
+    </div>
+    <!-- //copyright -->
+</body>
+
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const caseStudies = document.querySelectorAll('.case-study-card');
+    const itemsPerPage = 4;
+    let currentPage = 0;
+
+    function showCaseStudies(page) {
+        caseStudies.forEach((caseStudy, index) => {
+            if (index >= page * itemsPerPage && index < (page + 1) * itemsPerPage) {
+                caseStudy.style.display = 'block';
+            } else {
+                caseStudy.style.display = 'none';
+            }
+        });
+    }
+
+    document.getElementById('nextBtn').addEventListener('click', () => {
+        if ((currentPage + 1) * itemsPerPage < caseStudies.length) {
+            currentPage++;
+            showCaseStudies(currentPage);
+        }
+    });
+
+    document.getElementById('prevBtn').addEventListener('click', () => {
+        if (currentPage > 0) {
+            currentPage--;
+            showCaseStudies(currentPage);
+        }
+    });
+
+    showCaseStudies(currentPage);
+});
+
+</script>
+</html>
