@@ -130,7 +130,7 @@ nav a {
     letter-spacing: 1px;
     padding: 0 14px;
     font-weight: 600;
-    margin: 0 0.5em;
+    /* margin: 0 0.5em; */
     text-transform: uppercase;
 }
 
@@ -558,7 +558,7 @@ li>a:only-child:after {
 
 /* background images for banner */
 .banner-w3pvt-1 {
-    background: url(../images/learningdev.png) no-repeat top;
+    background: url(../images/banner5.jpg) no-repeat top;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
