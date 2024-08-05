@@ -161,55 +161,60 @@ li.social-icons a span {
 /* Hide Dropdowns by Default
  * and giving it a position of absolute */
 
+/* General Styles for the Navigation */
 nav ul ul {
     display: none;
     position: absolute;
-    /* has to be the same number as the "line-height" of "nav a" */
-    /* width: 50%; */
-    top: 25px;
+    top: 100%; /* Position directly below the nav item */
+    left: 0; /* Align to the left of the nav item */
     padding: 10px;
-    background: #fff;
-    padding: 10px;
+    background: #333; /* Make the background transparent */
     z-index: 999;
-    border: 1px solid #ddd;
-    left: 165px;
+    border: none; /* Remove the border */
     text-align: left;
 }
 
-/* Display Dropdowns on Hover */
-
-nav ul li:hover>ul {
-    display: inherit;
-}
-
-/* Fisrt Tier Dropdown */
-
-nav ul ul li {
-    width: 170px;
-    float: none;
-    display: list-item;
-    position: relative;
-    margin: 6%;
-}
-
-nav ul ul li a {
-    color: #333;
-    padding: 5px 10px;
+/* Show the dropdown on hover */
+nav ul li:hover > ul {
     display: block;
 }
 
-/* Second, Third and more Tiers	
- * We move the 2nd and 3rd etc tier dropdowns to the left
- * by the amount of the width of the first tier.
-*/
-
-nav ul ul ul li {
+/* Additional styling for dropdown items */
+nav ul ul li {
     position: relative;
-    top: -60px;
-    /* has to be the same number as the "width" of "nav ul ul li" */
-    left: 170px;
 }
 
+nav ul ul li a {
+    padding: 10px;
+    display: block;
+    white-space: nowrap; /* Prevent text wrapping */
+    color: #fff; /* Set the text color to white */
+    text-decoration: none; /* Remove underline from links */
+}
+
+nav ul ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Optional: Add a light transparent hover effect */
+}
+
+/* Ensure the parent li is relatively positioned */
+nav ul li {
+    position: relative;
+}
+
+/* Styles for top-level nav items */
+nav ul li a {
+    padding: 15px 20px;
+    display: inline-block;
+    color: #fff; /* Set the top-level nav text color to white */
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 25px; /* Ensure this matches the dropdown's top offset */
+}
+
+/* Optional: Style the nav container */
+nav {
+    background: transparent; /* Make the nav background transparent */
+}
 
 /* Change ' +' in order to change the Dropdown symbol */
 
@@ -249,7 +254,7 @@ li>a:only-child:after {
         text-decoration: none;
         border: none;
         float: right;
-        background-color: #212529;
+        /* background-color: #212529; */
         color: #fff;
         cursor: pointer !important;
         margin-bottom: 0;
@@ -259,9 +264,10 @@ li>a:only-child:after {
 
     .menu .toggle {
         float: none;
-        text-align: left;
+        /* text-align: left; */
         margin: auto;
-        width: 80%;
+        margin-left: 2%;
+        /* width: 80%; */
         padding: 5px;
         font-weight: normal;
         font-size: 16px;
@@ -304,14 +310,14 @@ li>a:only-child:after {
         font-size: 17px;
     }
 
-    label.toggle.toggle-2 {
+    /* label.toggle.toggle-2 {
         width: 94%;
         font-size: 13px;
-    }
+    } */
 
     nav ul li ul li .toggle,
     nav ul ul a {
-        background-color: #343a40;
+        /* background-color: #343a40; */
     }
 
     /* Hide Dropdowns by Default */
@@ -619,7 +625,7 @@ li>a:only-child:after {
 .btn:hover {
     background: #ff0000;
     border: 2px solid #ff0000;
-    color: #333;
+    color: #fff;
     transition: .5s ease-in;
     -webkit-transition: .5s ease-in;
     -moz-transition: .5s ease-in;
@@ -630,7 +636,7 @@ li>a:only-child:after {
 .btn.more {
     background: #ff0000;
     border: 2px solid #ff0000;
-    color: #222;
+    color: #fff;
 }
 
 .btn.more.black:hover {
@@ -1361,6 +1367,247 @@ h4.title-hny {
     color: #ff0000;
 }
 
+
+.sponsors-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: white;
+}
+
+.sponsors-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.sponsors-section p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #6c757d;
+}
+
+.sponsor-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.sponsor-logos img {
+    max-height: 60px;
+    display: inline-block;
+}
+
+.case-studies-section {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+.case-studies {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.case-study-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.case-study-card:hover {
+    transform: translateY(-5px);
+}
+
+.case-study-card img {
+    width: 100%;
+    height: auto;
+}
+
+.case-study-content {
+    padding: 20px;
+}
+
+.case-study-content h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.case-study-content p {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.case-study-tags {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.tag {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.case-study-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.case-study-button:hover {
+    background-color: #0056b3;
+}
+
+.case-studies-navigation {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.nav-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #0056b3;
+}
+
+.case-studies-section {
+    position: relative;
+    padding-bottom: 50px;
+    /* To ensure there's space for the buttons */
+}
+
+.navigation-buttons {
+    position: absolute;
+    bottom: 10px;
+    right: 70px;
+    display: flex;
+    gap: 10px;
+}
+
+.navigation-buttons .btn {
+    padding: 10px 30px;
+    font-size: 12px;
+    top: 70px;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .case-studies {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .case-study-card {
+        margin: 10px 0;
+    }
+
+    .case-study-content h3 {
+        font-size: 16px;
+    }
+
+    .case-study-content p {
+        font-size: 12px;
+    }
+
+    .sponsors-section h2 {
+        font-size: 24px;
+    }
+
+    .sponsors-section p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .case-studies {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .case-study-card {
+        margin: 10px 0;
+    }
+
+    .navigation-buttons {
+        right: 10px;
+    }
+
+    .case-studies-section {
+        padding: 20px 0;
+    }
+
+    .sponsors-section h2 {
+        font-size: 24px;
+    }
+
+    .sponsors-section p {
+        font-size: 16px;
+    }
+
+    .case-study-content h3 {
+        font-size: 16px;
+    }
+
+    .case-study-content p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .case-studies {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .case-study-card {
+        margin: 10px 0;
+    }
+
+    .case-studies-section {
+        padding: 10px 0;
+    }
+
+    .sponsors-section h2 {
+        font-size: 20px;
+    }
+
+    .sponsors-section p {
+        font-size: 14px;
+    }
+
+    .case-study-content h3 {
+        font-size: 14px;
+    }
+
+    .case-study-content p {
+        font-size: 10px;
+    }
+}
+
 .single-page-form {}
 
 /*--//single --*/
@@ -1372,6 +1619,8 @@ h4.title-hny {
 /* Colors */
 /* Calculations */
 /* Placeholders */
+
+
 @media (min-width: 1000px) {
 
     #timeline .demo-card:nth-child(odd) .head::after,

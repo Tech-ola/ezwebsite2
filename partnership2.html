@@ -6,16 +6,16 @@
     <!-- Meta tag Keywords -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
-    <meta name="keywords"
-        content="Infinitude Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <meta name="keywords" content="Infinitude Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
     <script>
-        addEventListener("load", function () {
+        addEventListener("load", function() {
             setTimeout(hideURLbar, 0);
         }, false);
 
         function hideURLbar() {
             window.scrollTo(0, 1);
         }
+
     </script>
     <!-- //Meta tag Keywords -->
     <!-- Custom-Files -->
@@ -26,34 +26,55 @@
     <!-- font-awesome-icons -->
     <link href="css/font-awesome.css" rel="stylesheet">
     <!-- //font-awesome-icons -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        @media (max-width: 575.98px) {
-          .mobiletop {
-            margin-top: 2rem; /* Adjust the value as needed */
-          }
+        .about {
+            padding: 2rem 0;
         }
-        .card-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+
+        .title {
+            font-size: 25px;
+            font-weight: bold;
         }
-        .course-card {
-            margin-bottom: 2rem;
-            width: 100%;
+
+        .highlight {
+            color: #ff0000;
+            font-weight: bold;
         }
-        @media (min-width: 576px) {
-            .course-card {
-                width: 48%;
-            }
+
+        .partnership-list {
+            padding-right: 1rem;
         }
-        @media (min-width: 768px) {
-            .course-card {
-                width: 30%;
-            }
+
+        .partnership-list li {
+            font-size: 18px;
+            margin-bottom: 1rem;
+        }
+
+        .partnership-list a {
+            text-decoration: none;
+            color: #007bff;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+            padding: 0.5rem 1rem;
+            display: inline-block;
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+
+        .partnership-list a:hover {
+            background-color: #007bff;
+            color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .partnership-list a i {
+            margin-left: 0.5rem;
         }
     </style>
+
 </head>
 
 <body>
@@ -63,8 +84,8 @@
             <!--/top-nav -->
             <div class="top_w3pvt_main container">
                 <!--/header -->
-                <header class="nav_w3pvt text-center ">
-                                      <!-- nav -->
+            <header class="nav_w3pvt text-center ">
+                <!-- nav -->
                 <nav class="wthree-w3ls">
                     <div id="logo">
                         <a class="navbar-brand px-0 mx-0" href="index.html"><img src="./images/ez37logo.png" alt="EZ Logo" title="EZ Logo"  />
@@ -83,7 +104,7 @@
                         <label for="drop-2" class="toggle toggle-2" style="font-size: 19px; font-weight: bolder;">
                             Solutions 
                         </label>
-                        <a href="#" style="font-size: 19px; font-weight: bolder;color: #ff0000 !important;">
+                        <a href="#" style="font-size: 19px; font-weight: bolder;">
                             Solutions <span class="fa fa-angle-down" aria-hidden="true"></span>
                         </a>
                         <input type="checkbox" id="drop-2" />
@@ -102,7 +123,7 @@
                         <label for="drop-3" class="toggle toggle-3" style="font-size: 19px; font-weight: bolder;">
                             Partnerships
                         </label>
-                        <a href="#" style="font-size: 19px; font-weight: bolder;">
+                        <a href="#" style="font-size: 19px; font-weight: bolder;color: #ff0000 !important;">
                             Partnerships <span class="fa fa-angle-down" aria-hidden="true"></span>
                         </a>
                         <input type="checkbox" id="drop-3" />
@@ -138,10 +159,9 @@
 
                     </ul>
                 </nav>
-                    <!-- //nav -->
-                </header>
-                <!--//header -->
-
+                <!-- //nav -->
+            </header>
+            <!--//header -->
 
                 <!--/breadcrumb-->
                 <div class="inner-w3pvt-page-info">
@@ -149,7 +169,7 @@
                         <li class="breadcrumb-item">
                             <a href="index.html">Home</a>
                         </li>
-                        <li class="breadcrumb-item active">Learning & Development</li>
+                        <li class="breadcrumb-item active">Partnerships</li>
                     </ol>
 
                 </div>
@@ -160,155 +180,35 @@
     </div>
     <!-- //home -->
     <!-- about -->
-    <section class="about py-5">
+    <section class="about py-5 animate__animated animate__fadeIn">
         <div class="container py-md-5">
-
             <div class="row">
-                <div class="col-md-6">
-                    <div class="about-hny-info text-left pr-lg-5">
-                        <h3 class="tittle-w3ls mb-5">Learning <span class="pink"> & Development</span></h3>
 
-                        <p class="sub-tittle mt-3 mb-4 pr-lg-5">We see learning as an investment rather than an
-                            expense. For us, each learning engagement must achieve specific results, so we adopt the
-                            “Training Needs Analysis” procedure to find the knowledge gap and meet identified needs. We
-                            are accredited by the Learning & Performance Institute (The leading authority in Learning and
-                            Development) and also certified by the International Finance Corporation (The private arm of
-                            the World Bank group) with a mandate to use their best-in-class training methodology and
-                            content. Our list of courses are as follows:
-                        </p>
-                    </div>
-                </div>
+                <div class="col-lg-12 d-flex flex-column">
+                    <h4 class="title mb-3">
+                        <span class="highlight">Operational</span> Partnerships
+                    </h4>
+                    <p style="font-size: 19px;">Explore our diverse range of operational partnerships below:</p>
 
-                <div class="col-md-6">
-                    <img src="./images/banner4.jpg" alt="" class="img-fluid">
-                </div>
-            </div>
+                    <ul class="partnership-list">
+                        <li>
+                            Dew Insight –
+                            <a target="_blank" href="https://dewinsight.com" target="_blank" rel="noopener noreferrer">dewinsight.com</a>
+                        </li>
 
-            <div class="container">
-                <div class="card-container">
-                    <!-- Coaching -->
-                    <div class="card course-card animate__animated animate__fadeInUp">
-                        <div class="card-body">
-                            <h5 class="card-title"><b>COACHING</b></h5>
-                            <ul>
-                                <li>Coach Skills Training for Leaders and Managers</li>
-                                <li>Executive and Leadership Coaching</li>
-                                <li>Group Coaching</li>
-                                <li>Team Coaching</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Certification -->
-                    <div class="card course-card animate__animated animate__fadeInUp">
-                        <div class="card-body">
-                            <h5 class="card-title"><b>CERTIFICATION</b></h5>
-                            <ul>
-                                <li>Professional Coaching Level 1</li>
-                                <li>Advanced Coaching Level 2</li>
-                                <li>Facilitating Face-to-Face Learning</li>
-                                <li>Facilitating Learning Online and In-person</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Employee Wellness -->
-                    <div class="card course-card animate__animated animate__fadeInUp">
-                        <div class="card-body">
-                            <h5 class="card-title"><b>EMPLOYEE WELLNESS</b></h5>
-                            <ul>
-                                <li>Mental Health Awareness Workshop</li>
-                                <li>Wellness</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                      <!-- LEADERSHIP DEVELOPMENT -->
-                      <div class="card course-card animate__animated animate__fadeInUp">
-                        <div class="card-body">
-                            <h5 class="card-title"><b>LEADERSHIP DEVELOPMENT</b></h5>
-                            <ul>
-                                <li>Appraising Performance</li>
-                                <li>Becoming a more Efficient Manager</li>
-                                <li>Delegating Effectively</li>
-                                <li>Leading Change and Innovation</li>
-                                <li>Leading Your Team</li>
-                                <li>Managing with Authority</li>
-                                <li>Motivating People</li>
-                                <li>Purpose-Driven Leadership</li>
-                                <li>Retaining Top Talents</li>
-                                <li>Strategy Formulation and Implementation</li>
-                                <li>Using Information for Decision Making</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- MENTORING -->
-                    <div class="card course-card animate__animated animate__fadeInUp">
-                        <div class="card-body">
-                            <h5 class="card-title"><b>MENTORING</b></h5>
-                            <ul>
-                                <li>Formal Mentoring Program Design</li>
-                                <li>Mentor Training Workshop</li>
-                                <li>Mentee Training Workshop</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- ASSESSMENTS -->
-                    <!-- <div class="card course-card animate__animated animate__fadeInUp">
-                        <div class="card-body">
-                            <h5 class="card-title"><b>ASSESSMENTS</b></h5>
-                            <ul>
-                                <li>DISC Personality Assessment Leadership</li>
-                                <li>Leadership Effectiveness 
-                            360 Assessment</li>
-                                <li>Skills Assessment Test</li>
-                            </ul>
-                        </div>
-                    </div> -->
-
-                     <!-- PERSONAL AND TEAM EFFECTIVENESS -->
-                     <div class="card course-card animate__animated animate__fadeInUp">
-                        <div class="card-body">
-                            <h5 class="card-title"><b>PERSONAL AND TEAM EFFECTIVENESS</b></h5>
-                            <ul>
-                                <li>Caring for the Customer</li>
-                                <li>Communicating Effectively</li>
-                                <li>Controlling Costs</li>
-                                <li>Effective Business 
-                                    Communication</li>
-                                <li>Emotional Intelligence</li>
-                                <li>Fundamentals of Team 
-                                    Effectiveness</li>
-                                <li>Managing Time</li>
-                                <li>Project Management</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                      <!-- SALES -->
-                      <div class="card course-card animate__animated animate__fadeInUp">
-                        <div class="card-body">
-                            <h5 class="card-title"><b>SALES</b></h5>
-                            <ul>
-                                <li>Business Acumen for Sales-People</li>
-                                <li>Channel Development and Management</li>
-                                <li>Developing a Business Plan for a New Venture</li>
-                                <li>Field Sales Management</li>
-                                <li>Improving your Selling Skills</li>
-                                <li>Key Accounts Development and Management</li>
-                            </ul>
-                        </div>
-                    </div>
-
-
+                        <li>
+                            Nexaroot –
+                            <a target="_blank" href="https://www.nexaroot.com/" target="_blank" rel="noopener noreferrer">www.nexaroot.com</a>
+                        </li>
+                       
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
-    <!-- //about -->
-        
+
+    
+    
     <!-- footer -->
     <footer class="py-lg-5 py-4">
         <div class="container py-sm-3">

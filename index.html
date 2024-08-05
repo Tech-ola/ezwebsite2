@@ -30,38 +30,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        .values-mission-vision i {
-            font-size: 48px;
-            color: #ff0000; /* Adjust the color as needed */
-            margin-bottom: 10px;
-        }
-        .values-mission-vision {
-            display: flex;
-            justify-content: space-around;
-            text-align: center;
-            padding: 20px;
-        }
-        .values-mission-vision > div {
-            flex: 1;
-            margin: 0 10px;
-        }
-        .values-mission-vision h6 {
-            font-size: 15px;
-            margin-bottom: 10px;
-        }
-        .values-mission-vision p, .values-mission-vision ul {
-            font-size: 12px;
-        }
-        .values-mission-vision i {
-            font-size: 48px;
-            color: #ff0000; /* Adjust the color as needed */
-            margin-bottom: 10px;
-        }
-        .no-padding-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
+        /* General Styles for Dropdowns */
+      /* General Styles for Dropdowns */
+
     </style>
 
 </head>
@@ -81,31 +52,69 @@
                         
                     </div>
 
-                    <label for="drop" class="toggle">Menu</label>
+                    <label for="drop" class="toggle" style="background-color: #333;color: #fff;">Menu</label>
                     <input type="checkbox" id="drop" />
                     <ul class="menu mr-auto">
-                        <li class="active"><a href="index.html" style="font-size: 17px; font-weight: bolder;">Home</a></li>
-                        <li><a href="about.html" style="font-size: 17px; font-weight: bolder;">About</a></li>
-                        <li>
-                            <!-- First Tier Drop Down -->
-                            <label for="drop-2" class="toggle toggle-2" style="font-size: 17px; font-weight: bolder;">Solutions <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
-                            <a href="#" style="font-size: 17px; font-weight: bolder;">Solutions  <span class="fa fa-angle-down" aria-hidden="true"></span></a>
-                            <input type="checkbox" id="drop-2" />
-                            <ul>
+                        <!-- <li class="active"><a href="index.html" style="font-size: 17px; font-weight: bolder;">Home</a></li> -->
+                        <li class="active"><a href="index.html" style="font-size: 19px; font-weight: bolder;">About</a></li>
+                        
+                        <!-- Solutions Dropdown -->
+                    <li>
+                        <label for="drop-2" class="toggle toggle-2" style="font-size: 19px; font-weight: bolder;">
+                            Solutions 
+                        </label>
+                        <a href="#" style="font-size: 19px; font-weight: bolder;">
+                            Solutions <span class="fa fa-angle-down" aria-hidden="true"></span>
+                        </a>
+                        <input type="checkbox" id="drop-2" />
+                        <ul>
+                            <li><a href="assessment.html" class="drop-text" style="font-size: 15px;">Assessments</a></li>
+                            <li><a href="https://ezcoaching.org/" class="drop-text" style="font-size: 15px;">Coaching</a></li>
+                            <li><a href="facilitatinglearning.html" class="drop-text" style="font-size: 15px;">Facilitating Learning</a></li>
+                            <li><a href="hradvisory.html" class="drop-text" style="font-size: 15px;">HR Advisory Service</a></li>
+                            <li><a href="learningdev.html" class="drop-text" style="font-size: 15px;">Learning & Development</a></li>
+                            <li><a href="publicsector.html" class="drop-text" style="font-size: 15px;">Public Sector Solutions</a></li>
+                        </ul>
+                    </li>
 
-                                                                <li><a href="assessment.html" class="drop-text" style="font-size: 15px;">Assessments</a></li>
-				<li><a href="https://ezcoaching.org/" class="drop-text" style="font-size: 15px;">Coaching</a></li>
-                                <li><a href="facilitatinglearning.html" class="drop-text" style="font-size: 15px;">Facilitating Learning</a></li>
-                                <li><a href="hradvisory.html" class="drop-text" style="font-size: 15px;">HR Advisory Service</a></li>
-                                <li><a href="learningdev.html" class="drop-text" style="font-size: 15px;">Learning & Development</a></li>
-                                <li><a href="publicsector.html" class="drop-text" style="font-size: 15px;">Public Sector Solutions</a></li>
+                    <!-- Partnerships Dropdown -->
+                    <li>
+                        <label for="drop-3" class="toggle toggle-3" style="font-size: 19px; font-weight: bolder;">
+                            Partnerships
+                        </label>
+                        <a href="#" style="font-size: 19px; font-weight: bolder;">
+                            Partnerships <span class="fa fa-angle-down" aria-hidden="true"></span>
+                        </a>
+                        <input type="checkbox" id="drop-3" />
+                        <ul>
+                            <li><a href="partnership1.html" class="drop-text" style="font-size: 15px;">Industry
+                                Partnerships</a></li>
+                            <li><a href="partnership2.html" class="drop-text" style="font-size: 15px;">Operational 
+                                Partnerships</a></li>
+                            <!-- Add more partnerships as needed -->
+                        </ul>
+                    </li>
 
-                            </ul>
-                        </li>
-                        <li><a href="partnerships.html" style="font-size: 17px; font-weight: bolder;">Partnerships</a></li>
-<li><a href="project.html" style="font-size: 17px; font-weight: bolder;">Projects</a></li>
+                    <!-- Case Studies Dropdown -->
+                    <li>
+                        <label for="drop-4" class="toggle toggle-4" style="font-size: 19px; font-weight: bolder;">
+                            Case Studies 
+                        </label>
+                        <a href="#" style="font-size: 19px; font-weight: bolder;">
+                            Case Studies <span class="fa fa-angle-down" aria-hidden="true"></span>
+                        </a>
+                        <input type="checkbox" id="drop-4" />
+                        <ul>
+                            <li><a href="casestudy1.html" class="drop-text" style="font-size: 15px;">COACHING SKILLS TRAINING FOR MANAGERS AND LEADERS</a></li>
+                            <li><a href="casestudy2.html" class="drop-text" style="font-size: 15px;">ONE-TO-ONE COACHING</a></li>
+                            <li><a href="casestudy3.html" class="drop-text" style="font-size: 15px;">PROFESSIONAL COACH CERTIFICATION PROGRAM</a></li>
+                            <li><a href="casestudy4.html" class="drop-text" style="font-size: 15px;">TEAM COACHING</a></li>
+                          
+                        </ul>
+                    </li>
 
-                        <li><a href="contact.php" style="font-size: 17px; font-weight: bolder;">Contact</a></li>
+
+                        <li><a href="contact.php" style="font-size: 19px; font-weight: bolder;">Contact</a></li>
 
                         <!-- <li class="social-icons ml-lg-3"><a href="#" class="p-0 social-icon"><span class="fa fa-facebook-official" aria-hidden="true"></span>
                                 <div class="tooltip">Facebook</div>
@@ -166,8 +175,8 @@
             <div class="banner-hny-info">
                 <h3>Building Success Through <br> Collaboration and Innovation</h3>
                 <div class="top-buttons mx-auto text-center mt-md-5 mt-3">
-                    <a href="about.html" class="btn more mr-2" style="color:white">Read More</a>
-                    <a href="contact.php" class="btn">Contact Us</a>
+                    <!-- <a href="about.html" class="btn more mr-2" style="color:white">Read More</a> -->
+                    <a href="contact.php" class="btn more mr-2">Contact Us</a>
                 </div>
                 <!-- <div class="d-flex hny-stats-inf">
                     <div class="col-md-4 stats_w3pvt_counter_grid mt-3">
@@ -199,16 +208,21 @@
 
     <!-- //home -->
 
-    <!-- about -->
-    <section class="about py-5">
-        <div class="container p-md-5">
-            <div class="about-hny-info text-left px-md-5">
-                <h3 class="tittle-w3ls mb-3"><span>We are a</span> <span style="color: #ff0000"> Human Resource and Management Consulting Firm</span></h3>
-                <p class="sub-tittle mt-3 mb-4">We are an International Coaching Federation (ICF) accredited training provider and are committed to providing the highest professional and ethical standards in coaching. We are also a member of the Association of Coach Training Organisations (ACTO).</p>
-                <a class="btn more black" href="about.html" role="button" style="color:white">Read More</a>
+      <!-- about -->
+      <section class="about py-5">
+        <div class="container py-md-5">
+            <div class="about-hny-info text-left pr-lg-5">
+                <h3 class="tittle-w3ls mb-3"><span class="pink">Who</span> We Are</h3>
+                <p class="sub-tittle mt-3 mb-4 pr-lg-5">EZ37 Solutions Limited (RC 833803) was established in 2009. 
+                    We are a leading Human Resource and Management Consulting firm that provides Coaching, Learning and Development, Assessments, HR Advisory, Public Sector Solutions and Business and Management Consulting services.
+                    Our objective is to provide transformational business strategies that positively impact people and organizations.
+                    
+                    </p>
+
             </div>
         </div>
     </section>
+    <!-- //about -->
 
 <!--   
 <section class="values-mission-vision ">
@@ -235,21 +249,29 @@
     </div>
 </section> -->
 
-    <section class="banner_bottom py-5">
-        <div class="container py-md-5">
-            <div class="row inner_sec_info">
-                <div class="col-md-6 banner_bottom_grid help">
-                    <img src="images/assessment.jpg" alt=" " class="img-fluid">
-                </div>
-                <div class="col-md-6 banner_bottom_left mt-lg-0 mt-4">
-                    <h4><a class="link-hny" href="services.html">
-                            About Us </a></h4>
-                    <p>EZ37 Solutions, with RC Number 833803 established in 2009, specialises in delivering diverse Coaching and Learning and Development programs that inspire employees to be more engaged and motivated. Both mentoring and coaching benefit businesses in several ways.</p>
-                    <p>To benefit the most, businesses need to be clear on what their priorities are and what kind of support they are looking for.</p>
-                    <a class="btn more black mt-3" href="contact.php" role="button" style="color:white">Contact Us</a>
-                </div>
+<section class="banner_bottom py-5">
+    <div class="container py-md-5">
+        <div class="row inner_sec_info">
+
+            <div class="col-md-6 banner_bottom_grid help">
+                <img src="images/project3.jpg" alt=" " class="img-fluid">
             </div>
-            
+            <div class="col-md-6 banner_bottom_left">
+                <h4><a class="link-hny" href="services.html">
+                    Our Proposition</a></h4>
+                        <p>To bridge the gap between employee performance and high-level 
+                            business transformation, organizations need to review the learning 
+                            culture.
+                            A Havard Business School quote says: <i>‘Visionary companies don’t just 
+                                demand the best talent – they crate it’.</i> 
+                            </p>
+                        <p>Our learning and development programs are tailored to improve your 
+                            talent pipeline, support our organization to achieve its strategic 
+                            objectives</p>
+                <!-- <a class="btn more black mt-3" href="services.html" role="button" style="color:white">Services Info</a> -->
+
+            </div>
+        </div>            
             <div class="row features-w3pvt-main" id="features">
                 <div class="col-md-4 feature-gird">
                     <div class="row features-hny-inner-gd">
@@ -427,7 +449,7 @@
     </section>
     <!--//services-->
     <!-- /projects -->
-    <section class="projects py-5" id="gallery">
+    <!-- <section class="projects py-5" id="gallery">
         <div class="container py-md-5">
             <h3 class="tittle-w3ls text-left mb-5">Some Of Our <span style="color: #ff0000">Stunning</span> Projects</h3>
             <div class="row news-grids mt-md-5 mt-4 text-center">
@@ -448,7 +470,7 @@
                     <div class="gal-info">
                         <h5>View Project<span class="decription">Website</span></h5>
                     </div>
-                </div>
+                </div> -->
                 <!-- <div class="col-md-4 gal-img">
                     <a href="#gal4"><img src="images/g4.jpg" alt="w3pvt" class="img-fluid"></a>
                     <div class="gal-info">
@@ -487,104 +509,104 @@
                     </div>
                 </div> -->
 
-            </div>
+            <!-- </div> -->
             <!-- popup-->
-            <div id="gal1" class="pop-overlay">
+            <!-- <div id="gal1" class="pop-overlay">
                 <div class="popup">
                     <img src="images/gtbanklogo.png" alt="Popup Image" class="img-fluid" style="width: 100%;"/>
                     <p class="mt-4">Description of the project would appear here.</p>
                     <a class="close" href="#gallery">&times;</a>
                 </div>
-            </div>
+            </div> -->
             <!-- //popup -->
             <!-- popup-->
-            <div id="gal2" class="pop-overlay">
+            <!-- <div id="gal2" class="pop-overlay">
                 <div class="popup">
                     <img src="images/cocacola.png" alt="Popup Image" class="img-fluid" style="width: 100%;"/>
                     <p class="mt-4">Description of the project would appear here.</p>
                     <a class="close" href="#gallery">&times;</a>
                 </div>
-            </div>
+            </div> -->
             <!-- //popup -->
             <!-- popup-->
-            <div id="gal3" class="pop-overlay">
+            <!-- <div id="gal3" class="pop-overlay">
                 <div class="popup">
                     <img src="images/IHS.png" alt="Popup Image" class="img-fluid" style="width: 100%;"/>
                     <p class="mt-4">Description of the project would appear here.</p>
                     <a class="close" href="#gallery">&times;</a>
                 </div>
-            </div>
+            </div> -->
             <!-- //popup3 -->
             <!-- popup-->
-            <div id="gal4" class="pop-overlay">
+            <!-- <div id="gal4" class="pop-overlay">
                 <div class="popup">
                     <img src="images/g4.jpg" alt="Popup Image" class="img-fluid" />
                     <h5>View Project</h5>
                     <p class="mt-4">Description of the project would appear here.</p>
                     <a class="close" href="#gallery">&times;</a>
                 </div>
-            </div>
+            </div> -->
             <!-- //popup -->
             <!-- popup-->
-            <div id="gal5" class="pop-overlay">
+            <!-- <div id="gal5" class="pop-overlay">
                 <div class="popup">
                     <img src="images/g5.jpg" alt="Popup Image" class="img-fluid" />
                     <h5 class="mt-3">View Project</h5>
                     <p class="mt-4">Description of the project would appear here.</p>
                     <a class="close" href="#gallery">&times;</a>
                 </div>
-            </div>
+            </div> -->
             <!-- //popup -->
             <!-- popup-->
-            <div id="gal6" class="pop-overlay">
+            <!-- <div id="gal6" class="pop-overlay">
                 <div class="popup">
                     <img src="images/g6.jpg" alt="Popup Image" class="img-fluid" />
                     <h5 class="mt-3">View Project</h5>
                     <p>Description of the project would appear here.</p>
                     <a class="close" href="#gallery">&times;</a>
                 </div>
-            </div>
+            </div> -->
             <!-- //popup -->
             <!-- popup-->
-            <div id="gal7" class="pop-overlay">
+            <!-- <div id="gal7" class="pop-overlay">
                 <div class="popup">
                     <img src="images/g7.jpg" alt="Popup Image" class="img-fluid" />
                     <h5 class="mt-3">View Project</h5>
                     <p class="mt-4">Description of the project would appear here.</p>
                     <a class="close" href="#gallery">&times;</a>
                 </div>
-            </div>
+            </div> -->
             <!-- //popup -->
             <!-- popup-->
-            <div id="gal8" class="pop-overlay">
+            <!-- <div id="gal8" class="pop-overlay">
                 <div class="popup">
                     <img src="images/g8.jpg" alt="Popup Image" class="img-fluid" />
                     <h5 class="mt-3">View Project</h5>
                     <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
                     <a class="close" href="#gallery">&times;</a>
                 </div>
-            </div>
+            </div> -->
             <!-- //popup -->
             <!-- popup-->
-            <div id="gal9" class="pop-overlay">
+            <!-- <div id="gal9" class="pop-overlay">
                 <div class="popup">
                     <img src="images/g9.jpg" alt="Popup Image" class="img-fluid" />
                     <h5 class="mt-3">View Project</h5>s
                     <p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
                     <a class="close" href="#gallery">&times;</a>
                 </div>
-            </div>
+            </div> -->
             <!-- //popup -->
         
-        <center>
+        <!-- <center>
             <a href="project.html" class="btn btn-danger" style="background-color: #ff0000;" >View All Projects</a>
         </center>
         </div>
-    </section>
+    </section> -->
     <!-- //projects -->
     
     <!--/services-->
-    <section class="testmonials" id="test">
+    <!-- <section class="testmonials" id="test">
         <div class="over-lay-blue py-5">
             <div class="container py-md-5">
                 <h3 class="tittle-w3ls two text-center mb-5">Our Testimonials</h3>
@@ -637,7 +659,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!--//testimonials-->
 
 <!-- /blogs -->
@@ -668,7 +690,7 @@
                         </a>
                     </h2>
                     <p class="mb-3">EZ37 Solutions, with RC Number 833803 established in 2009, specialises in delivering diverse Coaching and Learning and Development programs that inspire employees to be more engaged and motivated.</p>
-                    <h5>Trusted by <span>1000+ People</span> </h5>
+                    <!-- <h5>Trusted by <span>1000+ People</span> </h5> -->
                     <div class="icon-social mt-4">
                         <a href="#" class="button-footr">
                             <span class="fa mx-2 fa-facebook"></span>
@@ -692,8 +714,8 @@
                     <h4 class="mb-4">Quick Links</h4>
                     <div class="links-wthree d-flex">
                         <ul class="list-info-wthree">
-                            <li><a href="/"><span class="fa fa-angle-double-right" aria-hidden="true"></span> Home</a></li>
-                            <li><a href="./about.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span> About Us</a></li>
+                            <!-- <li><a href="/"><span class="fa fa-angle-double-right" aria-hidden="true"></span> Home</a></li> -->
+                            <li><a href="/"><span class="fa fa-angle-double-right" aria-hidden="true"></span> About Us</a></li>
                             <li><a href="./coaching.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span> Coaching</a></li>
                             <li><a href="hradvisory.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span> HR Advisory</a></li>
                             <li><a href="assessment.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span> Assessments</a></li>
