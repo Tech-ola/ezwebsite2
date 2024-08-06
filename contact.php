@@ -147,7 +147,7 @@
             <div class="container py-md-5 py-3">
                 <div class="px-lg-5">
                     <h3 class="tittle-w3ls mb-lg-5 mb-4"><span class="pink">Contact</span> Us</h3>
-                    <p class="mt-5 pr-lg-5">We value your inquiries and are committed to providing timely and effective responses. Please reach out to us with any questions, comments, or concerns you may have. Our dedicated team will review your message and respond within 24 hours. We strive to offer the best support and ensure your satisfaction.
+                    <p class="mt-5 pr-lg-6">We value your inquiries and are committed to providing timely and effective responses. Please reach out to us with any questions, comments, or concerns you may have. Our dedicated team will review your message and respond within 24 hours. We strive to offer the best support and ensure your satisfaction.
                             </p>
 
 
@@ -331,6 +331,28 @@
 
     </div>
     <!-- //copyright -->
+
+        <!-- Chatbot  -->
+<div class="chat-container">
+    <div class="chat-button" id="chatButton">
+        <img src="./images/whatsapp-white.png" alt="WhatsApp Icon">
+        <span>Hi, how can I help?</span>
+    </div>
+    <div class="chat-window" id="chatWindow">
+        <div class="chat-header">
+            <span>Our support team is here to answer your questions. Ask us anything!</span>
+            <button class="close-button" id="closeButton">&times;</button>
+        </div>
+        <div class="chat-body">
+            <form action="https://wa.me/2348130898773?text=Hi,%20how%20can%20I%20help?" method="post" target="_blank">
+                <input type="text" placeholder="Hi, how can I help?" class="form-control" required>
+                <button type="submit" class="send-button form-control">Reply to EZSolutions..</button>
+               </form>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 
 <script>
