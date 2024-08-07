@@ -272,9 +272,11 @@
                         <ul class="list-info-wthree">
                             <!-- <li><a href="/"><span class="fa fa-angle-double-right" aria-hidden="true"></span> Home</a></li> -->
                             <li><a href="/"><span class="fa fa-angle-double-right" aria-hidden="true"></span> About Us</a></li>
-                            <li><a href="./coaching.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span> Coaching</a></li>
+                           <li><a href="assessment.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span> Assessments</a></li>
+                            <li><a href="https://ezcoaching.org/"><span class="fa fa-angle-double-right" aria-hidden="true"></span> Coaching</a></li>
                             <li><a href="hradvisory.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span> HR Advisory</a></li>
-                            <li><a href="assessment.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span> Assessments</a></li>
+                            
+                            <li><a href="publicsector.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span> Public Sector Solutions</a></li>
                             <li><a href="publicsector.html"><span class="fa fa-angle-double-right" aria-hidden="true"></span> Public Sector Solutions</a></li>
                         </ul>
                         <ul class="list-info-wthree ml-5">
