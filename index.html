@@ -37,11 +37,12 @@
         /* General Styles for Dropdowns */
       /* General Styles for Dropdowns */
       /* styles.css */
-      
       .swiper-container {
     position: relative;
     padding-bottom: 40px; /* Adjust this value to make space for the pagination */
+    overflow: hidden;
 }
+
 .swiper-pagination {
     position: absolute;
     bottom: 10px; /* Adjust this value to position the pagination at the desired spot */
@@ -50,13 +51,18 @@
     text-align: center;
 }
 
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .swiper-slide img {
         width: 200px; /* Set desired width */
         height: 200px; /* Set desired height */
         object-fit: contain; /* Ensure the image fits within the given width and height without being distorted */
         margin: auto; /* Center the images within the slide */
     }
-
 
     </style>
 
@@ -877,17 +883,25 @@
             prevEl: '.swiper-button-prev',
         },
         breakpoints: {
-            640: {
+            320: {
                 slidesPerView: 2,
                 spaceBetween: 10,
             },
-            768: {
+            480: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+            640: {
                 slidesPerView: 3,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 4,
                 spaceBetween: 10,
             },
             1024: {
                 slidesPerView: 5,
-                spaceBetween: 7,
+                spaceBetween: 10,
             },
         }
     });
