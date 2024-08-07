@@ -147,7 +147,7 @@
             <div class="container py-md-5 py-3">
                 <div class="px-lg-5">
                     <h3 class="tittle-w3ls mb-lg-5 mb-4"><span class="pink">Contact</span> Us</h3>
-                    <p class="mt-5 pr-lg-6">We value your inquiries and are committed to providing timely and effective responses. Please reach out to us with any questions, comments, or concerns you may have. Our dedicated team will review your message and respond within 24 hours. We strive to offer the best support and ensure your satisfaction.
+                    <p class="mt-5 pr-lg-6" style="font-size: 18px">We value your inquiries and are committed to providing timely and effective responses. Please reach out to us with any questions, comments, or concerns you may have. Our dedicated team will review your message and respond within 24 hours. We strive to offer the best support and ensure your satisfaction.
                             </p>
 
 
@@ -300,8 +300,11 @@
                 </div>
                 <div class="col-lg-4 mt-4 ad-info">
                     <h4 class="mb-4">Contact Info</h4>
-                    <p><span class="fa fa-map-marker"></span>Block 3. Plot 2, Road B, Off Oba
-                        Abimbola way, Agodi GRA, <span>Ibadan, Nigeria.</span></p>
+                     <p><span class="fa fa-map-marker"></span>Block 3. Plot 2, Road B, Off Oba
+                        Abimbola way, Agodi GRA, <span>Ibadan, Nigeria.</span> <br><br>
+                        
+                        <span class="fa fa-map-marker"></span>71-75 Shelton Street, Covent Garden, WC2H 9JQ , UNITED KINGDOM
+                    </p>
                     <p class="phone"><span class="fa fa-phone"></span> +234-813-089-8773 </p>
                     <p class="phone"><span class="fa fa-fax"></span> +234-809-788-1001</p>
                     <p><span class="fa fa-envelope"></span><a href="mailto:info@ez37solutions.org">info@ez37solutions.org</a></p>

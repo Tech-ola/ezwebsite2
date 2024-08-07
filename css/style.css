@@ -1590,6 +1590,33 @@ h4.title-hny {
     cursor: pointer;
 }
 
+.sponsors-section {
+    background-color: white !important;
+    padding: 20px 0;
+}
+
+.sponsors-section img {
+    max-height: 50px;
+    max-width: 90px;
+    margin: 10px; /* Adjust the margin to control space between images */
+}
+
+@media (max-width: 767px) {
+    .sponsors-section img {
+        flex-basis: calc(33.33% - 20px); /* Responsive flex sizing */
+        max-width: 80px;
+    }
+}
+
+@media (min-width: 768px) {
+    .sponsors-section .col-md-8 {
+        justify-content: space-between; /* Distribute space evenly on larger screens */
+    }
+    .sponsors-section img {
+        margin: 5px; /* Ensure consistent spacing on larger screens */
+        max-width: 90px;
+    }
+}
 
 
 /* Media Queries */

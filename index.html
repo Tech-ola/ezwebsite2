@@ -27,12 +27,35 @@
     <link href="css/font-awesome.css" rel="stylesheet">
     <!-- //font-awesome-icons -->
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* General Styles for Dropdowns */
       /* General Styles for Dropdowns */
       /* styles.css */
+      
+      .swiper-container {
+    position: relative;
+    padding-bottom: 40px; /* Adjust this value to make space for the pagination */
+}
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px; /* Adjust this value to position the pagination at the desired spot */
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.swiper-slide img {
+        width: 200px; /* Set desired width */
+        height: 200px; /* Set desired height */
+        object-fit: contain; /* Ensure the image fits within the given width and height without being distorted */
+        margin: auto; /* Center the images within the slide */
+    }
 
 
     </style>
@@ -175,7 +198,7 @@
             </div>
             <!-- banner-hny-info -->
             <div class="banner-hny-info">
-                <h3>Building Success Through <br> Collaboration and Innovation</h3>
+                <h3>Partnering For Performance <br> And Progress</h3>
                 <div class="top-buttons mx-auto text-center mt-md-5 mt-3">
                     <!-- <a href="about.html" class="btn more mr-2" style="color:white">Read More</a> -->
                     <a href="contact.php" class="btn more mr-2">Contact Us</a>
@@ -313,7 +336,7 @@
                             
                             <div class="row">
                                 <div class="col-12">
-                                    <ul class="no-padding-list">
+                                    <ul class="no-padding-list" style="list-style-type: none;">
                                         <li>Partnership</li>
                                         <li>Integrity</li>
                                         <li>People</li>
@@ -668,16 +691,46 @@
 <section class="blog-posts" id="blog">
     <div class="blog-w3pvt-info-content container-fluid">
         <h3 class="tittle-w3ls text-center mb-2 mt-5">Our Clients</h3>
-    
-        <center>
-            <img src="images/ourclients.png" alt="Popup Image" class="img-fluid mb-5" />
-        </center>
-        
-
+        <div class="swiper-container mt-5">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/logo/africare.png" alt="Client Image" class="img-fluid mb-2" /></div>
+                <div class="swiper-slide"><img src="images/logo/AIG.jpeg" alt="Client Image" class="img-fluid mb-2" /></div>
+                <div class="swiper-slide"><img src="images/logo/Allianz.svg.png" alt="Client Image" class="img-fluid mb-2" /></div>
+                <div class="swiper-slide"><img src="images/ndiclogo.jpg" alt="Client Image" class="img-fluid mb-2" /></div>
+                <div class="swiper-slide"><img src="images/logo/AXA.png" alt="Client Image" class="img-fluid mb-2" /></div>
+                <div class="swiper-slide"><img src="images/logo/BOI-logo.png" alt="Client Image" class="img-fluid mb-2" /></div>
+                <div class="swiper-slide"><img src="images/logo/COCA COLA HBC.png" alt="Client Image" class="img-fluid mb-2" /></div>
+                <div class="swiper-slide"><img src="images/logo/FBN HOLDINGS.jpeg.png" alt="Client Image" class="img-fluid mb-2" /></div>
+                <div class="swiper-slide"><img src="images/logo/FBN.png" alt="Client Image" class="img-fluid mb-2" /></div>
+                <div class="swiper-slide"><img src="images/logo/FCMB_Logo.png" alt="Client Image" class="img-fluid mb-2" /></div>
+                <div class="swiper-slide"><img src="images/logo/GTCO.png" alt="Client Image" class="img-fluid mb-2" /></div>
+                <div class="swiper-slide"><img src="images/logo/Honeywell Group.png" alt="Client Image" class="img-fluid mb-2" /></div>
+                <div class="swiper-slide"><img src="images/logo/images.jpeg" alt="Client Image" class="img-fluid mb-2" /></div>
+                <div class="swiper-slide"><img src="images/logo/Lafarge.png" alt="Client Image" class="img-fluid mb-2" /></div>
+                <div class="swiper-slide"><img src="images/logo/LAGOON.png" alt="Client Image" class="img-fluid mb-2" /></div>
+                <div class="swiper-slide"><img src="images/logo/LASG.jpeg" alt="Client Image" class="img-fluid mb-2" /></div>
+                <div class="swiper-slide"><img src="images/logo/Leadway.png" alt="Client Image" class="img-fluid mb-2" /></div>
+                <div class="swiper-slide"><img src="images/logo/MTN.png" alt="Client Image" class="img-fluid mb-2" /></div>
+                <div class="swiper-slide"><img src="images/logo/NBC.jpeg" alt="Client Image" class="img-fluid mb-2" /></div>
+                <div class="swiper-slide"><img src="images/logo/NBL.jpeg" alt="Client Image" class="img-fluid mb-2" /></div>
+                <div class="swiper-slide"><img src="images/logo/OYSG.jpeg" alt="Client Image" class="img-fluid mb-2" /></div>
+                <div class="swiper-slide"><img src="images/logo/Renmoney.png" alt="Client Image" class="img-fluid mb-2" /></div>
+                <div class="swiper-slide"><img src="images/logo/Sterling_Bank_Logo_Straight.png" alt="Client Image" class="img-fluid mb-2" /></div>
+                <div class="swiper-slide"><img src="images/logo/Total Energies.jpeg" alt="Client Image" class="img-fluid mb-2" /></div>
+                <div class="swiper-slide"><img src="images/logo/Traction Apps.png" alt="Client Image" class="img-fluid mb-2" /></div>
+                <div class="swiper-slide"><img src="images/logo/UAC-Foods.jpg" alt="Client Image" class="img-fluid mb-2" /></div>
+                <div class="swiper-slide"><img src="images/logo/WEMA BANK.png" alt="Client Image" class="img-fluid mb-2" /></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next" style="color: #ff0000; font-size: 12px;"></div>
+            <div class="swiper-button-prev" style="color: #ff0000; font-size: 12px;"></div>
         </div>
     </div>
-
 </section>
+
+
 <!-- //blogs -->
 
 <!-- Chatbot  -->
@@ -766,8 +819,11 @@
                 </div>
                 <div class="col-lg-4 mt-4 ad-info">
                     <h4 class="mb-4">Contact Info</h4>
-                    <p><span class="fa fa-map-marker"></span>Block 3. Plot 2, Road B, Off Oba
-                        Abimbola way, Agodi GRA, <span>Ibadan, Nigeria.</span></p>
+                     <p><span class="fa fa-map-marker"></span>Block 3. Plot 2, Road B, Off Oba
+                        Abimbola way, Agodi GRA, <span>Ibadan, Nigeria.</span> <br><br>
+                        
+                        <span class="fa fa-map-marker"></span>71-75 Shelton Street, Covent Garden, WC2H 9JQ , UNITED KINGDOM
+                    </p>
                     <p class="phone"><span class="fa fa-phone"></span> +234-813-089-8773 </p>
                     <p class="phone"><span class="fa fa-fax"></span> +234-809-788-1001</p>
                     <p><span class="fa fa-envelope"></span><a href="mailto:info@ez37solutions.org">info@ez37solutions.org</a></p>
@@ -799,7 +855,43 @@
     <!-- //copyright -->
 </body>
 
+
 <script src="script.js"></script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+            1024: {
+                slidesPerView: 5,
+                spaceBetween: 7,
+            },
+        }
+    });
+</script>
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
