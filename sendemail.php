@@ -1,5 +1,4 @@
 <?php 
-
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -10,7 +9,22 @@ require 'vendor/autoload.php';
  // Set up PHPMailer
     $mail = new PHPMailer(true);
 
-  $firstname = htmlspecialchars($_POST['firstname']);
+	$recaptcha_secret = '6LfqOCIqAAAAALq9GyIl702OvLWDCk7ywOhVEctt';
+    $recaptcha_response = $_POST['g-recaptcha-response'];
+
+    // Verify the reCAPTCHA response
+    $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$recaptcha_secret&response=$recaptcha_response");
+    $response_keys = json_decode($response, true);
+
+    if (intval($response_keys["success"]) !== 1) {
+        // reCAPTCHA verification failed
+		// header("location: contact.php?success=recaptcha");
+		// exit;
+        die('Please complete the reCAPTCHA');
+    }
+
+	else{
+		$firstname = htmlspecialchars($_POST['firstname']);
   $lastname = htmlspecialchars($_POST['lastname']);
   $email = htmlspecialchars($_POST['email']);
   $contact = htmlspecialchars($_POST['contact']);
@@ -329,6 +343,7 @@ require 'vendor/autoload.php';
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
 
+	}
  
 
 ?>

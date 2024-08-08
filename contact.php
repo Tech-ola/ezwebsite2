@@ -18,6 +18,7 @@
 
     </script>
      <script src="https://www.google.com/recaptcha/api.js"></script>
+     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- //Meta tag Keywords -->
     <!-- Custom-Files -->
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -147,7 +148,7 @@
             <div class="container py-md-5 py-3">
                 <div class="px-lg-5">
                     <h3 class="tittle-w3ls mb-lg-5 mb-4"><span class="pink">Contact</span> Us</h3>
-                    <p class="mt-5 pr-lg-6" style="font-size: 18px">We value your inquiries and are committed to providing timely and effective responses. Please reach out to us with any questions, comments, or concerns you may have. Our dedicated team will review your message and respond within 24 hours. We strive to offer the best support and ensure your satisfaction.
+                    <p class="mt-5 pr-lg-6" style="font-size: 18px">Please reach out with questions or comments. 
                             </p>
 
 
@@ -169,6 +170,10 @@
                             if($_GET['success'] == "error"){
                                 echo "<div class='alert alert-success'>Oops, an error occured. Please kindly try again later.</div>";
                             }
+
+                            // if($_GET['success'] == "recaptcha"){
+                            //     echo "<div class='alert alert-success'>Please complete the reCAPTCHA.</div>";
+                            // }
                         }
 
                         ?>
@@ -211,7 +216,7 @@
                         
                                     <div class="form-group" id="othersInput" style="display: none;">
                                         <label for="w3lOthers">Please specify</label>
-                                        <input type="text" name="others" id="w3lOthers" required>
+                                        <input type="text" name="others" id="w3lOthers">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
@@ -220,15 +225,21 @@
                                         <textarea name="message" id="w3lMessage" required></textarea>
                                     </div>
                                 </div>
+
+                                <div class="col-lg-12">
+                                <div class="g-recaptcha" data-sitekey="6LfqOCIqAAAAABEeyl87269uIKe5rhcqskrYZk6W"></div>
+
+                                </div>
+                                
                                 <div class="form-group mx-auto mt-3">
-                                    <button type="submit" class="btn btn-default morebtn more black con-submit" style="color: white">Submit</button>
+                                    <button type="submit" class="btn btn-default morebtn more black" style="color: white">Submit</button>
                                 </div>
                             </div>
                         </form>
                     </div>
-                    <div class="map-w3pvt mt-5">
+                    <!-- <div class="map-w3pvt mt-5">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d63303.46254791193!2d3.853965204121329!3d7.413519404681023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sIbadan%3A%20Block%203%2C%20Plot%202%2C%20Road%20B%2C%20Off%20Oba%20Abimbola%20Way%2C%20Agodi%20GRA%2C%20Ibadan%2C%20Oyo%20State.!5e0!3m2!1sen!2sng!4v1720695434147!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -371,10 +382,10 @@
     });
 </script>
 
-<script>
+<!-- <script>
    function onSubmit(token) {
      document.getElementById("demo-form").submit();
    }
  </script>
- 
+  -->
 </html>
